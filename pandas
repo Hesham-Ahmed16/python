@@ -1,0 +1,14 @@
+import pandas as pd
+
+mydataset = {
+  'students': ['ahmed','mohamed','hossam','Khalid','kareem'],
+  'grade': [98,78,86,65,91],
+  'passed': ['yes','yes','yes','no','yes']
+}
+
+exam = pd.DataFrame(mydataset)
+
+print(exam.loc[1])
+
+exam = exam[exam['passed'] == 'yes' ]
+print (exam)
