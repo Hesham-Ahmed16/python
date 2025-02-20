@@ -1,0 +1,22 @@
+def get_even_numbers(numbers):
+    return [num for num in numbers if num % 2 == 0]
+
+
+def get_odd_numbers(numbers):
+    return [num for num in numbers if num % 2 != 0]
+
+
+numbers_list = []
+
+while True:
+    user_input = input("enter your event number (press q to quit): ")
+    if user_input.lower() == "q":
+        break
+    try:
+        number = int(user_input)
+        numbers_list.append(number)
+    except ValueError:
+        print("please enter a number")
+
+even_numbers = get_even_numbers(numbers_list)
+print(f" even numbers: {even_numbers}")
