@@ -1,0 +1,8 @@
+Def full_name
+  print (m , n)
+f = input ("enter the f name: ")
+l = input ("enter the l name: ")
+full_name (f , l)
+f2 = "mohamed"
+l2 = "hosssam"
+full_name (f2 , l2)
